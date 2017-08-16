@@ -1,6 +1,8 @@
 # ClickThrough_ImageView
-It is common that you only want the Imageview accept click event on some special area such as Actor , if the click is happend in other area, it shoudl pass through to beathe
 It provides a imageview which could be click only inside its key image, otherwise, it will pass beneath.
+
+There is common request that click event will be accepted in on some special area with imageview , if the click is happend in other area, it should pass through to beathe. For example, there are 2 file poster, we want to the click will be handled when user click actor only, if click happened to the actor in below poster, it still would be handled. Current android imageview could not provide this feature.
+
 
 
 ## Gradle
@@ -8,7 +10,7 @@ It provides a imageview which could be click only inside its key image, otherwis
 ```java
 dependencies {
 	...
-	compile 'com.dualcores.swagpoints:swagpoints:1.0.2'
+	compile 'com.weimin.clickthroughimageview:CTImageView:1.0.0'
 }
 ```
 
@@ -26,7 +28,7 @@ dependencies {
 ```
 ## Sample
 * Clone the repository and check out the `app` module.
-* Download the app [Swag – Exchange Personal Snaps](https://play.google.com/store/apps/details?id=com.machipopo.swag) on Google Play. This widget is used in the send point dialog.
+* Download the app [Demo-Click Through Image View](https://play.google.com/store/apps/details?id=com.applandus.ringmyphone.android) on Google Play. This widget is used in the send point dialog.
 
 ## Licence
 Copyright 2017 Weimin Ding
