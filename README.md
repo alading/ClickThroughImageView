@@ -1,7 +1,11 @@
+[![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
 # ClickThrough_ImageView
 It provides a imageview which could be click only inside its key image, otherwise, it will pass beneath.
 
 There is common request that click event will be accepted in on some special area with imageview , if the click is happend in other area, it should pass through to beathe. For example, there are 2 file poster, we want to the click will be handled when user click actor only, if click happened to the actor in below poster, it still would be handled. Current android imageview could not provide this feature.
+
+![Screenshot](https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshoot/2pic.png)
 
 
 
