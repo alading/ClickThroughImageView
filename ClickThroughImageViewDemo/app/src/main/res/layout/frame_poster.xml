@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true">
+
+
+    <com.weimin.clickthroughimageview.CTImageView
+        android:id="@+id/civ_poster_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/bambi"
+        android:alpha="0.3"
+        />
+
+    <com.weimin.clickthroughimageview.CTImageView
+        android:id="@+id/civ_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:src="@drawable/deadpool"
+        />
+
+
+
+</RelativeLayout>
