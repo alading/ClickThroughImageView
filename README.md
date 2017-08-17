@@ -7,7 +7,8 @@ There is common request that click event will be accepted in on some special are
 
 User coudl click the actor image to switch the Imageview not Imageview itself which is alike the keying in Imageview
 
-![Screenshot](https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/CTImage.gif)
+
+<img src="https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/CTImage.gif" width="320" height="640" />
 
 
 
