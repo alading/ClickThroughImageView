@@ -24,16 +24,31 @@ dependencies {
 
 ## Usage
 
+
+* All customizable attributes:
+
+```xml
+<declare-styleable name="CTImageView">
+    <attr name="keyingcolor" format="color"/>
+</declare-styleable>
+```
+
 * In XML layout: 
 
 ```xml
     <com.weimin.clickthroughimageview.CTImageView
+    	xmlns:cti="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true"
-        android:src="@drawable/deadpool" 
+        android:src="@drawable/deadpool"
+	cti:keyingcolor="@color/color_key"
         />
 ```
+
+color_key will define the click through area. If it does not set, any non-opaque area could be click through.
+
+
 ## Sample
 * Clone the repository and check out the `app` module.
 * Download the app [Demo-Click Through Image View](https://play.google.com/store/apps/details?id=com.applandus.ringmyphone.android) on Google Play. This widget is used in the send point dialog.
