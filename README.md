@@ -7,7 +7,7 @@ There is common request that click event will be accepted in on some special are
 
 Current android imageview could not provide this feature.
 
-![Screenshot](https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/2pic.png)
+![Screenshot](https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/screenshot.png)
 
 
 
