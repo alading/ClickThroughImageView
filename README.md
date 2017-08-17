@@ -5,9 +5,10 @@ It provides a imageview which could be click only inside its key image, otherwis
 
 There is common request that click event will be accepted in on some special area with imageview , if the click is happend in other area, it should pass through to beathe. For example, there are 2 file poster, we want to the click will be handled when user click actor(deadpool) only, if click happened to the bambi in below poster, the below image will become the front one and the bambi become front one and deadpool become back image. Other place click will not take effect.
 
-Current android imageview could not provide this feature.
+User coudl click the actor image to switch the Imageview not Imageview itself which is alike the keying in Imageview
 
-![Screenshot](https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/CTImage.gif)
+
 
 
 
