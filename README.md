@@ -28,9 +28,9 @@ dependencies {
 * All customizable attributes:
 
 ```xml
-<declare-styleable name="CTImageView">
-    <attr name="keyingcolor" format="color"/>
-</declare-styleable>
+	<declare-styleable name="CTImageView">
+	    <attr name="keyingcolor" format="color"/>
+	</declare-styleable>
 ```
 
 * In XML layout: 
