@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cti="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerInParent="true">
+    android:layout_centerInParent="true"
+    android:clickable="true"
+    >
 
 
     <com.weimin.clickthroughimageview.CTImageView
@@ -13,6 +16,7 @@
         android:focusable="true"
         android:src="@drawable/bambi"
         android:alpha="0.3"
+        cti:keyingcolor="@color/colorTransparent"
         />
 
     <com.weimin.clickthroughimageview.CTImageView
@@ -21,6 +25,7 @@
         android:layout_height="match_parent"
         android:clickable="true"
         android:src="@drawable/deadpool"
+        cti:keyingcolor="@color/colorTransparent"
         />
 
 

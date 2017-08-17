@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import com.weimin.clickthroughimageview.CTImageView;
 
@@ -34,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                         ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
                 customImageViewFront.setLayoutParams(layoutParamsFront);
                 customImageViewBack.setAlpha(0.3f);
-                Toast.makeText(MainActivity.this, "CustomImageViewFront clicked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "CustomImageViewFront clicked", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 customImageViewBack.setLayoutParams(layoutParamsBack);
 
                 customImageViewFront.setAlpha(0.3f);
-                Toast.makeText(MainActivity.this, "CustomImageViewBack clicked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "CustomImageViewBack clicked", Toast.LENGTH_SHORT).show();
             }
         });
 
