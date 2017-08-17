@@ -1,4 +1,5 @@
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[ ![Download](https://api.bintray.com/packages/alading/Android/ClickThroughImageView/images/download.svg?version=1.0.0) ](https://bintray.com/alading/Android/ClickThroughImageView/1.0.0/link)
 
 # ClickThrough_ImageView
 It provides a imageview which could be click only inside its key image, otherwise, it will pass beneath.
