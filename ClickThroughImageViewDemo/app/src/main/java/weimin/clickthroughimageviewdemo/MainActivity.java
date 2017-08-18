@@ -4,8 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.RelativeLayout;
 
 import com.weimin.clickthroughimageview.CTImageView;
 
@@ -29,11 +27,23 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.e("CustomImageViewFront", "on Click");
                 customImageViewFront.setAlpha(1f);
-                RelativeLayout.LayoutParams layoutParamsFront = new RelativeLayout.LayoutParams(
-                        ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-                customImageViewFront.setLayoutParams(layoutParamsFront);
+                customImageViewFront.animate()
+                        .scaleX(2)
+                        .scaleY(2)
+                        .x(customImageViewFront.getWidth())
+                        .y(customImageViewFront.getHeight()/2)
+                        .setDuration(2000)
+                        .start();
+
                 customImageViewBack.setAlpha(0.3f);
-                //Toast.makeText(MainActivity.this, "CustomImageViewFront clicked", Toast.LENGTH_SHORT).show();
+                customImageViewBack.animate()
+                        .scaleX(1)
+                        .scaleY(1)
+                        .x(0)
+                        .y(0)
+                        .setDuration(2000)
+                        .start();
+
 
             }
         });
@@ -45,12 +55,23 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("CustomImageViewBack", "on Click");
 
                 customImageViewBack.setAlpha(1f);
-                RelativeLayout.LayoutParams layoutParamsBack = new RelativeLayout.LayoutParams(
-                        ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-                customImageViewBack.setLayoutParams(layoutParamsBack);
+                customImageViewBack.animate()
+                        .scaleX(2)
+                        .scaleY(2)
+                        .x(customImageViewBack.getWidth()/3)
+                        .y(customImageViewBack.getHeight()/3)
+                        .setDuration(2000)
+                        .start();
+
 
                 customImageViewFront.setAlpha(0.3f);
-                //Toast.makeText(MainActivity.this, "CustomImageViewBack clicked", Toast.LENGTH_SHORT).show();
+                customImageViewFront.animate()
+                        .scaleX(1)
+                        .scaleY(1)
+                        .x(0)
+                        .y(0)
+                        .setDuration(2000)
+                        .start();
             }
         });
 

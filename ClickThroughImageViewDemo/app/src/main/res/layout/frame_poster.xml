@@ -10,8 +10,8 @@
 
     <com.weimin.clickthroughimageview.CTImageView
         android:id="@+id/civ_poster_back"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/bambi"
@@ -21,8 +21,8 @@
 
     <com.weimin.clickthroughimageview.CTImageView
         android:id="@+id/civ_poster"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:clickable="true"
         android:src="@drawable/deadpool"
         cti:keyingcolor="@color/colorTransparent"
