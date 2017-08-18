@@ -44,12 +44,12 @@ dependencies {
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="true"
-        android:src="@drawable/deadpool"
-	cti:keyingcolor="@color/color_key"
+        android:src="@drawable/deadpool"  <-- It should be your drawable resource
+	cti:keyingcolor="@color/color_key"  <-- It should the color key which will not reponse click 
         />
 ```
 
-color_key will define the click through area. If it does not set, any non-opaque area could be click through.
+color_key will define the click through area. If it does not set, any transparent area is click through.
 
 
 ## Sample
