@@ -6,6 +6,8 @@ It provides a imageview which could be click only inside its meaningful image, o
 
 There is common request that click event should be accepted only in some special area within imageview such as actor face or animal, if the click is happend in other area, it should be ignored. However, current imageview will not provide this feature as the imageview will overtake all click event. If there 2 imageview overlap, it will cause trouble.
 
+<img src="https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/Compare.png" width="640" height="480" />
+
 ClickThroughImageView(CTImageView) will provide this feature for developer.
 
 For example: you will find the demo app which include a fox and a bamdi. Click each of them will trigger some action. If you click transparent part which might overlap with other will not take effect.
@@ -13,7 +15,7 @@ For example: you will find the demo app which include a fox and a bamdi. Click e
 It will perfectly handle overlap imageview click handerling.
 
 
-<img src="https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/forest.gif" width="320" height="640" />
+<img src="https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/forest.gif" width="320" height="600" />
 
 
 
