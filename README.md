@@ -1,15 +1,19 @@
 [![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-[ ![Download](https://api.bintray.com/packages/alading/Android/ClickThroughImageView/images/download.svg?version=1.0.1) ](https://bintray.com/alading/Android/ClickThroughImageView/1.0.1/link)
+[ ![Download](https://api.bintray.com/packages/alading/Android/ClickThroughImageView/images/download.svg?version=1.0.2) ](https://bintray.com/alading/Android/ClickThroughImageView/1.0.2/link)
 
 # ClickThrough_ImageView
-It provides a imageview which could be click only inside its key image, otherwise, it will pass beneath.
+It provides a imageview which could be click only inside its meaningful image, otherwise, it will pass beneath.
 
-There is common request that click event will be accepted in on some special area with imageview , if the click is happend in other area, it should pass through to beathe. For example, there are 2 file poster, we want to the click will be handled when user click actor(deadpool) only, if click happened to the bambi in below poster, the below image will become the front one and the bambi become front one and deadpool become back image. Other place click will not take effect.
+There is common request that click event should be accepted only in some special area within imageview such as actor face or animal, if the click is happend in other area, it should be ignored. However, current imageview will not provide this feature as the imageview will overtake all click event. If there 2 imageview overlap, it will cause trouble.
 
-User coudl click the actor image to switch the Imageview not Imageview itself which is alike the keying in Imageview
+ClickThroughImageView(CTImageView) will provide this feature for developer.
+
+For example: you will find the demo app which include a fox and a bamdi. Click each of them will trigger some action. If you click transparent part which might overlap with other will not take effect.
+
+It will perfectly handle overlap imageview click handerling.
 
 
-<img src="https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/CTImage.gif" width="320" height="640" />
+<img src="https://raw.githubusercontent.com/alading/ClickThroughImageView/master/ClickThroughImageViewDemo/screenshot/forest.gif" width="320" height="640" />
 
 
 
@@ -19,7 +23,7 @@ User coudl click the actor image to switch the Imageview not Imageview itself wh
 ```java
 dependencies {
 	...
-	compile ('com.weimin.clickthroughimageview:CTImageView:1.0.1'){
+	compile ('com.weimin.clickthroughimageview:CTImageView:1.0.2'){
         	exclude group: 'com.android.support', module: 'appcompat-v7'
     	}
 }
