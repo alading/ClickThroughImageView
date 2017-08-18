@@ -3,28 +3,30 @@
     xmlns:cti="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_centerInParent="true"
     android:clickable="true"
+    android:background="@drawable/forest"
     >
 
 
     <com.weimin.clickthroughimageview.CTImageView
-        android:id="@+id/civ_poster_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/civ_bambi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/bambi"
-        android:alpha="0.3"
+        android:layout_centerInParent="true"
         cti:keyingcolor="@color/colorTransparent"
         />
 
     <com.weimin.clickthroughimageview.CTImageView
-        android:id="@+id/civ_poster"
+        android:id="@+id/civ_deadpool"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:src="@drawable/deadpool"
+        android:src="@drawable/fox"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/civ_bambi"
         cti:keyingcolor="@color/colorTransparent"
         />
 

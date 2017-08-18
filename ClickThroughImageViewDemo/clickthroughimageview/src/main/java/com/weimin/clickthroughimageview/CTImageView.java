@@ -65,26 +65,33 @@ public class CTImageView extends android.support.v7.widget.AppCompatImageView{
         switch(MotionEventCompat.getActionMasked(event))
         {
             case MotionEvent.ACTION_DOWN:
-                Matrix inverse = new Matrix();
-                getImageMatrix().invert(inverse);
-                float[] touchPoint = new float[] {event.getX(), event.getY()};
-                inverse.mapPoints(touchPoint);
-                int x = Integer.valueOf((int)touchPoint[0]);
-                int y = Integer.valueOf((int)touchPoint[1]);
-                if(null != getDrawable()) {
-                    Bitmap bitmap = ((BitmapDrawable) getDrawable()).getBitmap();
-                    int pixel = bitmap.getPixel(x, y);
-                    int red = Color.red(pixel);
-                    int blue = Color.blue(pixel);
-                    int green = Color.green(pixel);
-                    int alpha = Color.alpha(pixel);
-                    //Log.e(getName(), "color " + alpha +","+ red + "," + green + "," + blue);
-                    if (a == alpha && r == red && g == green && b == blue) {
-                        // not consume and it will pass to parent
-                        return false;
-                    } else {
-                        bringToFront();
+                try {
+                    Matrix inverse = new Matrix();
+                    getImageMatrix().invert(inverse);
+                    float[] touchPoint = new float[]{event.getX(), event.getY()};
+                    inverse.mapPoints(touchPoint);
+                    int x = Integer.valueOf((int) touchPoint[0]);
+                    int y = Integer.valueOf((int) touchPoint[1]);
+                    if (null != getDrawable()) {
+                        Bitmap bitmap = ((BitmapDrawable) getDrawable()).getBitmap();
+                        if(x>=bitmap.getWidth() || x<0 || y >=bitmap.getHeight() || y<0){
+                            return false;
+                        }
+                        int pixel = bitmap.getPixel(x, y);
+                        int red = Color.red(pixel);
+                        int blue = Color.blue(pixel);
+                        int green = Color.green(pixel);
+                        int alpha = Color.alpha(pixel);
+                        //Log.e(getName(), "color " + alpha +","+ red + "," + green + "," + blue);
+                        if (a == alpha && r == red && g == green && b == blue) {
+                            // not consume and it will pass to parent
+                            return false;
+                        } else {
+                            bringToFront();
+                        }
                     }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
                 break;
             case MotionEvent.ACTION_MOVE:
