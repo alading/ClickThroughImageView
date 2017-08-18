@@ -19,7 +19,9 @@ User coudl click the actor image to switch the Imageview not Imageview itself wh
 ```java
 dependencies {
 	...
-	compile 'com.weimin.clickthroughimageview:CTImageView:1.0.0'
+	compile ('com.weimin.clickthroughimageview:CTImageView:1.0.0'){
+        	exclude group: 'com.android.support', module: 'appcompat-v7'
+    	}
 }
 ```
 
