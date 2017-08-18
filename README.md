@@ -54,7 +54,7 @@ color_key will define the click through area. If it does not set, any transparen
 
 ## Sample
 * Clone the repository and check out the `app` module.
-* Download the app [Demo-Click Through Image View](https://play.google.com/store/apps/details?id=com.applandus.ringmyphone.android) on Google Play. This widget is used in the send point dialog.
+* Download the app [Demo-Click Through Image View](https://play.google.com/store/apps/details?id=com.applandus.ringmyphone.android) on Google Play.( will be upload soon :)
 
 ## Licence
 Copyright 2017 Weimin Ding
